@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="网上药店管理系统"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/drugPostBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="drugAddClick"
+            android:padding="20dp"
+            android:text="药品发布" />
+
+        <Button
+            android:id="@+id/drugManageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="manageDrugClick"
+            android:padding="20dp"
+            android:text="药品管理" />
+
+        <Button
+            android:id="@+id/userManageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="manageUserClick"
+            android:padding="20dp"
+            android:text="用户管理" />
+
+        <Button
+            android:id="@+id/messageManageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="commentListClick"
+            android:padding="20dp"
+            android:text="网站留言" />
+
+        <Button
+            android:id="@+id/drugMessageManageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="drugCommentClick"
+            android:padding="20dp"
+            android:text="药品留言" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

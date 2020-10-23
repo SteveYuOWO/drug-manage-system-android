@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.LoginActivity"
+    android:id="@+id/add_drug_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/post_drug_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="药品发布"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/drug_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入药品名称"
+            android:inputType="text"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/drug_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入药品详情"
+            android:inputType="text"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/drug_storage_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入药品保质期"
+            android:inputType="number"
+            android:padding="20dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/confirm_add_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="增加药品" />
+
+                <Button
+                    android:id="@+id/return_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="返回上层" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

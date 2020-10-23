@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.LoginActivity"
+    android:id="@+id/login_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="网上药店管理系统"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="20dp" />
+
+
+        <RadioGroup
+            android:id="@+id/loginType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/commonType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="普通用户"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/adminType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="管理员" />
+        </RadioGroup>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="登录" />
+
+                <Button
+                    android:id="@+id/goToRegisterBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="前往注册" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
